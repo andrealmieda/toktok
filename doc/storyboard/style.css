@@ -1,0 +1,78 @@
+	/*
+Oh, the reset!
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	
+	text-decoration: none;
+	outline: 0;
+	color:black
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+}
+
+a:visited {
+}
+textarea, input[type="text"] {
+	-webkit-appearance: none;
+}
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0; clear:both;}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+html{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 100%;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#centerWrapper{
+	display: table-cell;
+	vertical-align: middle;
+}
+#centerIMG{
+	display: table-cell;
+	max-width: 400px;
+	margin-bottom: 20px;
+}
+#text{
+	margin-bottom: 10px;
+}
+#buttons{
+	margin-top: 20px;
+}
+#buttons a{
+	margin: 0 20px;
+	font-weight: 700;
+}
+#center{
+	position: relative;
+	width: 400px;
+}
