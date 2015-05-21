@@ -76,3 +76,6 @@ body{
 	position: relative;
 	width: 400px;
 }
+.highlight{
+	border:1px solid red;
+}
