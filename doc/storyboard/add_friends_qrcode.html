@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tox Android Application Mockup</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="centerWrapper">
+			<center>
+				<div>
+					<div id="center">
+						<img id="centerIMG"src="img/qrcode.png">
+						<a href="add_friends_code.html"><div class="highlight" style="position:absolute;top: 35px;left: 12px;width: 100px;height: 30px;"></div></a>
+					</div>
+					<div id="text"><h1>Tox Android Application Mockup</h1></div>
+					<input id="checkbox" type="checkbox"  checked>Highlight Touch Spots<br>
+				</div>
+			</center>
+		</div>
+	</body>
+	<script type="text/javascript">
+
+		document.getElementById('checkbox').onclick = function() {
+			var a = document.getElementsByClassName('highlight')
+			if(document.getElementById('checkbox').checked){
+				
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="1px solid red";
+				}
+			}
+			else{
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="none";
+				}
+
+			}
+
+		}
+
+	</script>
+</html>

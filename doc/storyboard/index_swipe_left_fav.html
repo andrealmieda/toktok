@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tox Android Application Mockup</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="centerWrapper">
+			<center>
+				<div>
+					<div id="center">
+						<img id="centerIMG"src="img/inbox_swipe_left_unfav.png">
+						<a href="index_drawer.html"><div class="highlight" style="position:absolute;top: 40px;left: 17px;width: 30px;height: 30px;"></div></a>
+						<a href="message.html"><div class="highlight" style="position:absolute;top: 176px;left: 0px;width: 400px;height: 80px;"></div></a>
+						<a href="index_search.html"><div class="highlight" style="position:absolute;top: 40px;left: 358px;width: 30px;height: 30px;"></div></a>
+						<a href="new_message.html"><div class="highlight" style="position:absolute;top: 573px;left: 317px;width: 66px;height: 68px;"></div></a>
+						<a href="group_message.html"><div class="highlight" style="position:absolute;top: 260px;left: 0px;width: 400px;height: 80px;"></div></a>
+						<a href="index.html" style="color:blue;"><div style="position:absolute;top: 200px;left: -100px;">Swipe Right!</div></a>
+						<a href="contact_details.html"><div class="highlight" style="position:absolute;top: 198px;left: 324px;width: 30px;height: 30px;"></div></a>
+						<a href="video_call.html"><div class="highlight" style="position:absolute;top: 198px;left: 249px;width: 30px;height: 30px;"></div></a>
+						<a href="call_on_going.html"><div class="highlight" style="position:absolute;top: 198px;left: 173px;width: 30px;height: 30px;"></div></a>
+						<a href="index_swipe_left_fav.html"><div class="highlight" style="position:absolute;top: 198px;left: 100px;width: 30px;height: 30px;"></div></a>
+					</div>
+					<div id="text"><h1>Tox Android Application Mockup</h1></div>
+					<a href="Call.html" style="color:blue;">Get a Call!</a>
+					<input id="checkbox" type="checkbox"  checked>Highlight Touch Spots<br>
+				</div>
+			</center>
+		</div>
+	</body>
+	<script type="text/javascript">
+
+		document.getElementById('checkbox').onclick = function() {
+			var a = document.getElementsByClassName('highlight')
+			if(document.getElementById('checkbox').checked){
+				
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="1px solid red";
+				}
+			}
+			else{
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="none";
+				}
+
+			}
+
+		}
+
+	</script>
+</html>

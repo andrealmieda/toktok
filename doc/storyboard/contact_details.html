@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tox Android Application Mockup</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="centerWrapper">
+			<center>
+				<div>
+					<div id="center">
+						<img id="centerIMG"src="img/Contacts_Details.png">
+						<a href="javascript:history.back()"><div class="highlight" style="position:absolute;top: 669px;left: 74px;width: 30px;height: 30px;"></div></a>
+						<a href="call_on_going.html"><div class="highlight" style="position:absolute;top: 339px;left: 25px;width: 350px;height: 50px;"></div></a>
+						<a href="message.html"><div class="highlight" style="position:absolute;top: 486px;left: 25px;width: 350px;height: 50px;"></div></a>
+						<a href="video_call.html"><div class="highlight" style="position:absolute;top: 403px;left: 25px;width: 350px;height: 50px;"></div></a>
+						<a href="contact_details_save_image.html"><div class="highlight" style="position:absolute;top: 569px;left: 25px;width: 350px;height: 50px;"></div></a>
+						<a href="contact_details_unfav.html"><div class="highlight" style="position:absolute;top: 270px;left: 335px;width: 45px;height: 45px;"></div></a>
+					</div>
+					<div id="text"><h1>Tox Android Application Mockup</h1></div>
+					<a href="contact_details_down.html" style="color:blue;">Scroll Down!</a>
+					<input id="checkbox" type="checkbox"  checked>Highlight Touch Spots<br>
+				</div>
+			</center>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+
+		document.getElementById('checkbox').onclick = function() {
+			var a = document.getElementsByClassName('highlight')
+			if(document.getElementById('checkbox').checked){
+				
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="1px solid red";
+				}
+			}
+			else{
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="none";
+				}
+
+			}
+
+		}
+
+	</script>
+</html>

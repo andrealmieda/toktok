@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tox Android Application Mockup</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="centerWrapper">
+			<center>
+				<div>
+					<div id="center">
+						<img id="centerIMG"src="img/contacts_messaging_settings.png">
+						<a href="index.html"><div class="highlight" style="position:absolute;top: 669px;left: 74px;width: 30px;height: 30px;"></div></a>
+						<a href="message_keyboard.html"><div class="highlight" style="position:absolute;top: 607px;left: 50px;width: 330px;height: 50px;"></div></a>
+						<a href="message_files.html"><div class="highlight" style="position:absolute;top: 615px;left: 10px;width: 30px;height: 30px;"></div></a>
+						<a href="index.html"><div class="highlight" style="position:absolute;top: 40px;left: 17px;width: 30px;height: 30px;"></div></a>
+						<a href="contact_details.html"><div class="highlight" style="position:absolute;top: 27px;left: 117px;width: 115px;height: 60px;"></div></a>
+						<a href="contact_files.html"><div class="highlight" style="position:absolute;top: 38px;left: 240px;width: 150px;height: 35px;"></div></a>
+						<a href="message_recall.html"><div class="highlight" style="position:absolute;top: 150px;left: 240px;width: 150px;height: 40px;"></div></a>
+						<a href="message_muted.html"><div class="highlight" style="position:absolute;top: 75px;left: 240px;width: 150px;height: 35px;"></div></a>
+						<a href="message_conversation_deleted.html"><div class="highlight" style="position:absolute;top: 112px;left: 240px;width: 150px;height: 36px;"></div></a>
+					</div>
+					<div id="text"><h1>Tox Android Application Mockup</h1></div>
+					<a href="message_writting.html" style="color:blue;">Friend Writting!</a>
+					<input id="checkbox" type="checkbox"  checked>Highlight Touch Spots<br>
+
+				</div>
+			</center>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+
+		document.getElementById('checkbox').onclick = function() {
+			var a = document.getElementsByClassName('highlight')
+			if(document.getElementById('checkbox').checked){
+				
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="1px solid red";
+				}
+			}
+			else{
+				for(var i = 0; i< a.length; i++){
+					a[i].style.border="none";
+				}
+
+			}
+
+		}
+
+	</script>
+</html>
