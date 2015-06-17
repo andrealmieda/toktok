@@ -1,0 +1,59 @@
+#s-79be020d-37ae-45d8-b13a-dc874838234e > #backgroundBox {
+  background-color: transparent;
+  background-image: none;
+  position: absolute;
+}
+#s-79be020d-37ae-45d8-b13a-dc874838234e > #alignmentBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#s-79be020d-37ae-45d8-b13a-dc874838234e #s-Image_1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 360px;
+  height: 640px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+}
+#s-79be020d-37ae-45d8-b13a-dc874838234e #s-Hotspot_3 {
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  width: 162px;
+  height: 35px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#s-79be020d-37ae-45d8-b13a-dc874838234e #s-Hotspot_4 {
+  position: absolute;
+  top: 36px;
+  left: 270px;
+  width: 30px;
+  height: 28px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#s-79be020d-37ae-45d8-b13a-dc874838234e #s-Hotspot_5 {
+  position: absolute;
+  top: 252px;
+  left: 15px;
+  width: 216px;
+  height: 62px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.ui-page {
+  overflow-x: hidden;
+}
+#s-79be020d-37ae-45d8-b13a-dc874838234e > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}

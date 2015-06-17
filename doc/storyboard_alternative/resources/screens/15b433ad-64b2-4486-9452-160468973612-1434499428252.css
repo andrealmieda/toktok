@@ -1,0 +1,39 @@
+#s-15b433ad-64b2-4486-9452-160468973612 > #backgroundBox {
+  background-color: transparent;
+  background-image: none;
+  position: absolute;
+}
+#s-15b433ad-64b2-4486-9452-160468973612 > #alignmentBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#s-15b433ad-64b2-4486-9452-160468973612 #s-Image_1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 360px;
+  height: 640px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+}
+#s-15b433ad-64b2-4486-9452-160468973612 #s-Hotspot_1 {
+  position: absolute;
+  top: 79px;
+  left: 20px;
+  width: 161px;
+  height: 36px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.ui-page {
+  overflow-x: hidden;
+}
+#s-15b433ad-64b2-4486-9452-160468973612 > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
