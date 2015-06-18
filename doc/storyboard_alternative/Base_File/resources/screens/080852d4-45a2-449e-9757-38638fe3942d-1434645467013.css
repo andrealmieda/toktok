@@ -1,0 +1,49 @@
+#s-080852d4-45a2-449e-9757-38638fe3942d > #backgroundBox {
+  background-color: transparent;
+  background-image: none;
+  position: absolute;
+}
+#s-080852d4-45a2-449e-9757-38638fe3942d > #alignmentBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#s-080852d4-45a2-449e-9757-38638fe3942d #s-Image_1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 360px;
+  height: 640px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+  box-shadow: none;
+}
+#s-080852d4-45a2-449e-9757-38638fe3942d #s-Hotspot_1 {
+  position: absolute;
+  top: 36px;
+  left: 12px;
+  width: 29px;
+  height: 30px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#s-080852d4-45a2-449e-9757-38638fe3942d #s-Hotspot_2 {
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  width: 56px;
+  height: 51px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.ui-page {
+  overflow-x: hidden;
+}
+#s-080852d4-45a2-449e-9757-38638fe3942d > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
