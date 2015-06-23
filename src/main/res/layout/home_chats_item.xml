@@ -5,43 +5,121 @@
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:paddingBottom="5dp" >
+        android:layout_height="wrap_content">
 
         <RelativeLayout
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="6dp"
                 android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="80dp"
                     card_view:cardBackgroundColor="@android:color/white"
                     card_view:cardElevation="2sp"
                     card_view:cardUseCompatPadding="true"
                     android:weightSum="1.0">
 
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                    android:id="@+id/home_item_img_holder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                            android:id="@+id/home_item_img"
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_gravity="center"
+                                            android:background="#CDCDCD"
+                                            android:scaleType="fitXY" />
+
+                                    <ImageView
+                                            android:layout_width="55dp"
+                                            android:layout_height="55dp"
+                                            android:layout_gravity="center"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/home_item_mask" />
+                            </FrameLayout>
+                            <LinearLayout
+                                    android:id="@+id/home_item_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_toRightOf="@id/home_item_img_holder"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:text="Lorem Ipsum"
+                                        android:id="@+id/home_item_Name"
+                                        android:fontFamily="sans-serif-light"
+                                        android:textSize="18sp"
+                                        android:textColor="#000000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                    <TextView
+
+                                            android:text="Lorem ipsum dolor sit amet, consectetur..."
+                                            android:fontFamily="sans-serif-light"
+                                            android:textSize="10sp"
+                                            android:textColor="#000000"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                    <TextView
+
+                                            android:text="Lorem ipsum dolor sit amet, consectetur..."
+                                            android:fontFamily="sans-serif-light"
+                                            android:textSize="12sp"
+                                            android:textColor="#7D7D7D"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="15dp"
+                                    android:text="14:30"
+                                    android:fontFamily="sans-serif-light"
+                                    android:textSize="12sp"
+                                    android:textColor="#7D7D7D"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+                    </RelativeLayout>
 
             </android.support.v7.widget.CardView>
 
         </RelativeLayout>
 
         <RelativeLayout
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
                 android:background="@drawable/home_notification">
 
                         <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="40000000"
+                                android:text="4"
                                 android:layout_centerInParent="true"
+                                android:layout_marginTop="-6dp"
                                 android:textColor="#ffffff"
-                                android:textSize="10sp"/>
+                                android:textSize="12sp"/>
 
 
         </RelativeLayout>
