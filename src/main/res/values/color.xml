@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="mainPrimaryColor" type="color">#4D4D4D</item>
-    <item name="mainPrimaryDarkColor" type="color">#2B2B2B</item>
-    <item name="mainAccent" type="color">#000000</item>
-    <item name="mainBackground" type="color">#FBFAFB</item>
-    <item name="textDrawer" type="color">#FBFBFB</item>
-    <item name="navBarColor" type="color">#7D7D7D</item>
-    <item name="primaryButton" type="color">#ffffff</item>
-    <item name="primary_pressedButton" type="color">#ffffff</item>
-    <item name="rippleButton" type="color">#ffffff</item>
-    <item name="recyclerSelected" type="color">#d35400</item>
+    <item name="HomeColor" type="color">#4A90E2</item>
 </resources>
