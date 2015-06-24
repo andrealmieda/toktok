@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="HomeColor" type="color">#4A90E2</item>
+    <item name="FABColor" type="color">#FAFAFA</item>
+    <item name="FABColorPressed" type="color">#ECEBEB</item>
 </resources>

@@ -4,8 +4,7 @@ package im.tox.toktok.app
 import android.os.Bundle
 import android.support.v4.view.{ViewPager}
 import android.support.v7.app.{ActionBarActivity}
-import android.support.v7.widget.RecyclerView.LayoutManager
-import android.support.v7.widget.{LinearLayoutManager, RecyclerView, Toolbar}
+import android.support.v7.widget.{Toolbar}
 import android.view.{Menu}
 import im.tox.toktok.{R}
 import it.neokree.materialtabs.{MaterialTabListener, MaterialTabHost, MaterialTab}
@@ -14,7 +13,6 @@ class Main extends ActionBarActivity with MaterialTabListener {
 
   var mViewPaper : ViewPager = null
   var mMenu : Menu = null
-  var mChats_Recycler : RecyclerView = null
 
   protected override def onCreate(savedInstanceState: Bundle): Unit = {
     super.onCreate(savedInstanceState)
@@ -53,8 +51,6 @@ class Main extends ActionBarActivity with MaterialTabListener {
     mTabs.addTab(mTabs.newTab().setText("Friends").setTabListener(this))
     mTabs.addTab(mTabs.newTab().setText("Chats").setTabListener(this))
     mTabs.setSelectedNavigationItem(1)
-
-
 
   }
 

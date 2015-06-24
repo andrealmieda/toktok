@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:fab="http://schemas.android.com/tools"
-              android:orientation="vertical"
-              android:paddingTop="16dp"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fab="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:paddingTop="16dp"
+             android:layout_height="match_parent">
 
-    <include layout="@layout/home_chats_item"/>
-
-    <include layout="@layout/home_chats_item"/>
-
-    <include layout="@layout/home_chats_item"/>
-
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_chats_recycler"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     <com.melnykov.fab.FloatingActionButton
             android:id="@+id/home_chats_fab"
@@ -19,10 +17,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
             android:layout_margin="16dp"
-            android:src="@drawable/ic_person_add_white_24dp"
-            fab:fab_colorNormal="#ff00ff"
-            fab:fab_colorPressed="#ff00ff"
-            fab:fab_colorRipple="#ff00ff" />
+            android:src="@drawable/ic_content_add"
+            fab:fab_colorNormal="@color/FABColor"
+            fab:fab_colorPressed="@color/FABColorPressed"
+            fab:fab_colorRipple="@color/FABColorPressed" />
 
-
-</LinearLayout>
+</FrameLayout>

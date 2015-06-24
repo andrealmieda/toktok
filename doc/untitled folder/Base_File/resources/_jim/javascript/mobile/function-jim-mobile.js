@@ -147,9 +147,8 @@
 	
 	  function enableTouchTool() {
 		  jQuery("#jim-container").addClass("touch");
-	  };
-	  
-	  function enablePinchTool() {
+	  }
+	function enablePinchTool() {
 		  $page = jQuery("#jim-container");
 		  var cursor1 = '<div id="cursor1" class="cursor"></div>';
 		  var cursor2 = '<div id="cursor2" class="cursor"></div>';	
@@ -207,10 +206,10 @@
 				jQuery("#cursor1").remove();
 				jQuery("#cursor2").remove();
 			}
-		  });  
-	  };
-	
-	  function enableRotateTool() {
+		  });
+
+	  }
+	function enableRotateTool() {
 		  $page = jQuery("#jim-container");
 		  var cursor1 = '<div id="cursor1" class="cursor"></div>';
 		  var cursor2 = '<div id="cursor2" class="cursor"></div>';
@@ -282,10 +281,10 @@
 				jQuery("#cursor1").remove();
 				jQuery("#cursor2").remove();
 			}
-		  }); 
-	  };
-	
-	  /* zoom */
+		  });
+
+	  }
+	/* zoom */
 	  if($.browser.msie && $.browser.version<9) {
 		  if(jQuery("#zoomValue").attr("disabled")===undefined)
 			  jQuery("#zoomValue").attr("disabled", "disabled");
@@ -336,9 +335,9 @@
 		  
 		  //TODO
 		  //Change the cursor images if touch to give the "zoom" to mouse pointer. 
-	  };
-	  
-	  function restoreZoom(zoomLev) {
+
+	  }
+	function restoreZoom(zoomLev) {
 		  var zoom = 1/zoomLev,
 		  $container = jQuery('#jim-container'),
 		  $mobile = jQuery('#jim-mobile'),
@@ -366,10 +365,8 @@
 			  return i;
 		  }
 		  return -1;
-	  };
-
-	  
-	  /* other */
+	  }
+	/* other */
 	  var jimMobile = {
 		"orientation": function() {
 			var width = parseInt(jQuery("#simulation").css("width"));

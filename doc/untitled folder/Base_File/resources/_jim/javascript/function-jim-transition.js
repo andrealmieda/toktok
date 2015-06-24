@@ -284,16 +284,15 @@
 		  }
 	  }
 	  }
-	  catch(e){};
-	  
-	  return false;
+      catch (e) {
+      }
+    return false;
   }
   
   /* If transition is defined, check if css 3D transforms are supported, and if not, if a fallback is specified */
   function maybeDegradeTransition(transition) {
     return (transition && !jQuery.support.cssTransform3d) ? "fade" : transition;
-  };
-  
+  }
   function releaseLock() {
     isTransitioning = false;
     if(queue.length > 0) {

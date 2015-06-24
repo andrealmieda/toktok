@@ -31,7 +31,7 @@
       var newCases = this.getElementsToExecute(cases);
       var self = this;
       if(newCases.length === 0)
-    	return;
+
       else {
     	var len = newCases.length;
   		var remainingCases = cases.slice(len);
@@ -506,7 +506,7 @@
                     "value": self.jimGetValue(self.getEventTarget(action.parameter.target)),
                     "target": action.parameter.target
                   }
-                }
+                };
                 undoActions.push(undoAction);
                 /* store selection values */
                 switch(type) {

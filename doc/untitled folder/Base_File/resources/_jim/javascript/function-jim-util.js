@@ -548,7 +548,7 @@
 		    	  PIE.attach(this);
 		    	}
 		      });
-		    };   
+            }
             break;
           case itemType.menunode:
             if(!(args.target.parent(".menu").is(".vertical")))
@@ -611,7 +611,7 @@
     },
     "jimFocusOn": function($target, settings) {
     	if(jimUtil.exists($target) && $target.length && $target.is(":visible")) {
-            var type = $target.jimGetType()
+            var type = $target.jimGetType();
  	        switch(type) {
  	        case itemType.text:
  	        case itemType.password:
@@ -1006,7 +1006,7 @@
       },
       "getActivePanel": function($dynamicPanel) {
             if(jimUtil.exists($dynamicPanel) && $dynamicPanel.is(".dynamicpanel")){
-                var $panels, $panel, i, iLen
+                var $panels, $panel, i, iLen;
                 $panels = $dynamicPanel.children(".panel");
                 for(i=0, iLen = $panels.length; i < iLen; i += 1) {
                     $panel = jQuery($panels[i]);
@@ -1261,7 +1261,7 @@
                 newRowWidth= Math.max(newRowWidth,0);
               
               if(!jimUtil.exists(newRowHeight) || isNaN(parseInt(newRowHeight, 10)))
-                newRowHeight = parseInt($row.css("height"),10)    
+                newRowHeight = parseInt($row.css("height"),10);
               else           
                 newRowHeight= Math.max(newRowHeight,0);
               
@@ -1303,7 +1303,7 @@
                 newTableWidth= Math.max(newTableWidth - tableBorderLeftWidth - tableBorderRightWidth - jimEvent.fn.getCurrentStyle('padding-left', $table) - jimEvent.fn.getCurrentStyle('padding-right', $table),0);
               }
               if(!jimUtil.exists(newTableHeight) || isNaN(parseInt(newTableHeight, 10)))
-                newTableHeight = parseInt($table.css("height"),10)    
+                newTableHeight = parseInt($table.css("height"),10);
               else{     
                 var tableBorderTopWidth = isNaN(jimEvent.fn.getCurrentStyle('border-top-width', $table)) ? 0 : jimEvent.fn.getCurrentStyle('border-left-width', $table);
                 var tableBorderBottomWidth = isNaN(jimEvent.fn.getCurrentStyle('border-bottom-width', $table)) ? 0 : jimEvent.fn.getCurrentStyle('border-right-width', $table);     

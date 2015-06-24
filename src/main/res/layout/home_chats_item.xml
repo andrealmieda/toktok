@@ -59,7 +59,7 @@
 
                                     <TextView
                                         android:text="Lorem Ipsum"
-                                        android:id="@+id/home_item_Name"
+                                        android:id="@+id/home_item_name"
                                         android:fontFamily="sans-serif-light"
                                         android:textSize="18sp"
                                         android:textColor="#000000"
@@ -67,7 +67,7 @@
                                         android:layout_height="wrap_content"/>
 
                                     <TextView
-
+                                            android:id="@+id/home_item_status"
                                             android:text="Lorem ipsum dolor sit amet, consectetur..."
                                             android:fontFamily="sans-serif-light"
                                             android:textSize="10sp"
@@ -76,7 +76,7 @@
                                             android:layout_height="wrap_content"/>
 
                                     <TextView
-
+                                            android:id="@+id/home_item_last_message"
                                             android:text="Lorem ipsum dolor sit amet, consectetur..."
                                             android:fontFamily="sans-serif-light"
                                             android:textSize="12sp"
@@ -110,6 +110,7 @@
                 android:layout_height="20dp"
                 android:layout_marginRight="10dp"
                 android:layout_alignParentRight="true"
+                android:visibility="invisible"
                 android:background="@drawable/home_notification">
 
                         <TextView

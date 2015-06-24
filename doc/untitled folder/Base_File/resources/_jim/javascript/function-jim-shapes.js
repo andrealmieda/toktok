@@ -50,7 +50,7 @@
             }
             
         }
-    }
+    };
 
     window.jimShapes = jimShapes;
 
@@ -106,7 +106,7 @@
             return this[0].css2svg[property];
         else
             return this.css(property);
-    }
+    };
 
     var SVGEngine = {
         "defaults" : {
@@ -158,7 +158,7 @@
                     "original-text-left" : parseInt($shape.children(".shapert-clipping").css('left')),
                     "original-text-width" : parseInt($shape.find(".content").css('width')),
                     "original-text-height" : parseInt($shape.find(".content").css('height'))
-                }
+                };
                 
                 //set SVG id
                 $(svg).attr("id", "svg-" + $shape.prop("id"));
@@ -562,7 +562,7 @@
         	if(boxShadow.indexOf("rgb")===-1){
         		rgb = boxShadow.substring(boxShadow.indexOf("#"));
         	}else{
-        		rgb = boxShadow.slice("rgb")
+        		rgb = boxShadow.slice("rgb");
         		rgb = rgb.substring(0,rgb.indexOf(")")+1);
         		boxShadow =  boxShadow.substring(boxShadow.indexOf(")")+2);
         	}
@@ -1311,7 +1311,7 @@
                 scaledPath += " Z";
             return scaledPath;
         }
-    }
+    };
     
     var vmlCreatorDoc;
     
@@ -1848,8 +1848,8 @@
                 default:
                     $stroke[0].dashstyle = "solid";
                     break;
-            };
-             //$(shapeVML).attr("insetpen", "t");
+            }
+            //$(shapeVML).attr("insetpen", "t");
              
              if($(shapeVML).attr("shapeType")=== "line"){
               //update markers

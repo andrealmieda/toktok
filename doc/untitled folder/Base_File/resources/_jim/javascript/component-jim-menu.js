@@ -56,7 +56,7 @@
 	  	    	PIE.detach(this);
 	  		    PIE.attach(this);
 	  		});
-	      };
+          }
         } else {        	
           $submenu.css({"z-index": ++menu.defaults.zIndex, "top": position.top + "px", "left": position.right - 1 + "px"}).show();
           if(window.PIE){
@@ -64,7 +64,7 @@
   		    	PIE.detach(this);
 	  		    PIE.attach(this);
   		    });
-  		  };
+          }
         }
       } else if ($item.parents(".submenu").length) {
         var $parentMenu = $item.parents(".submenu:first");
@@ -77,7 +77,7 @@
         		PIE.detach(this);
         		PIE.attach(this);
     		});
-    	};
+        }
       } else {
         menu.closeAdjacentSubmenus($item.siblings("tr").find(".submenu:visible"));
         $item.find(".submenu:first").show();
@@ -86,7 +86,7 @@
         		PIE.detach(this);
         		PIE.attach(this);
     		});
-    	};
+        }
       }
     },
     "hideMenu": function($item, event) {
