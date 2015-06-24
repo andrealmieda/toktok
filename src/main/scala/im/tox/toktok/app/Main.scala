@@ -30,7 +30,7 @@ class Main extends ActionBarActivity with MaterialTabListener {
 
 
     mViewPaper = findViewById(R.id.home_tab_holder).asInstanceOf[ViewPager]
-    val mViewAdapter : Home_tabs_adapter = new Home_tabs_adapter(getSupportFragmentManager())
+    val mViewAdapter : HomeTabsAdapter = new HomeTabsAdapter(getSupportFragmentManager())
     mViewPaper.setAdapter(mViewAdapter)
     mViewPaper.setCurrentItem(1)
 

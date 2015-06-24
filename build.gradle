@@ -43,5 +43,6 @@ dependencies {
     compile "com.android.support:design:22.2.0"
     compile "it.neokree:MaterialTabs:0.11"
     compile "com.melnykov:floatingactionbutton:1.3.0"
+    compile 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
     //compile "im.tox:tox4j_2.11:0.0.0-SNAPSHOT"
 }

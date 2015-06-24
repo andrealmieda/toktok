@@ -7,9 +7,9 @@ import im.tox.toktok.R
 import scala.collection.mutable.ListBuffer
 
 
-class Home_chats_recycler_adapter(list : ListBuffer[Chats_message]) extends RecyclerView.Adapter[ListItemViewHolder] {
+class HomeChatsRecyclerAdapter(list : ListBuffer[ChatsMessage]) extends RecyclerView.Adapter[ListItemViewHolder] with MovimentAdapter{
 
-  private val items : ListBuffer[Chats_message] = list
+  private val items : ListBuffer[ChatsMessage] = list
 
   def onCreateViewHolder(viewGroup : ViewGroup, viewType : Int) : ListItemViewHolder = {
     val itemView : View = LayoutInflater.from(viewGroup.getContext).inflate(R.layout.home_chats_item,viewGroup,false)
@@ -17,7 +17,7 @@ class Home_chats_recycler_adapter(list : ListBuffer[Chats_message]) extends Recy
   }
 
   def onBindViewHolder(viewHolder: ListItemViewHolder,position : Int) = {
-    val item : Chats_message = items(position)
+    val item : ChatsMessage = items(position)
     viewHolder.mUserName.setText(item.getUserName())
     viewHolder.mUserStatus.setText(item.getUserStatus())
     viewHolder.mLastMessage.setText(item.getLastMessage())
@@ -27,5 +27,13 @@ class Home_chats_recycler_adapter(list : ListBuffer[Chats_message]) extends Recy
     return items.length
   }
 
+  def onItemDismiss(position : Int): Unit ={
+    items.remove(position)
+    notifyItemRemoved(position)
+  }
+
+  def onItemMove(from : Int, to : Int) : Unit = {
+
+  }
 
 }
