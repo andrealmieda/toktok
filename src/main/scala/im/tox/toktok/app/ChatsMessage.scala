@@ -1,16 +1,16 @@
 package im.tox.toktok.app
 
-class ChatsMessage(userName : String, userStatus : String, lastMessage : String) {
+class ChatsMessage(userName: String, userStatus: String, lastMessage: String) {
 
-  def getUserName(): String ={
+  def getUserName(): String = {
     return userName
   }
 
-  def getUserStatus(): String ={
+  def getUserStatus(): String = {
     return userStatus
   }
 
-  def getLastMessage(): String ={
+  def getLastMessage(): String = {
     return lastMessage
   }
 
