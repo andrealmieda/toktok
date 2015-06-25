@@ -1,13 +1,15 @@
 package im.tox.toktok.app
 
+import android.graphics.{Color, Canvas}
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.RecyclerView.ViewHolder
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.support.v7.widget.helper.ItemTouchHelper.Callback
+import android.util.Log
+import android.widget.RelativeLayout
+import im.tox.toktok.R
 
-/**
- * Created by andre on 6/24/15.
- */
+
 class SwipeCallback(movimentAdapter: MovimentAdapter) extends ItemTouchHelper.Callback {
 
   private final val mMoviment: MovimentAdapter = movimentAdapter
@@ -22,11 +24,12 @@ class SwipeCallback(movimentAdapter: MovimentAdapter) extends ItemTouchHelper.Ca
   }
 
   override def isItemViewSwipeEnabled(): Boolean = {
+
     return true
   }
 
   override def isLongPressDragEnabled(): Boolean = {
-    return true
+    return false
   }
 
   def getMovementFlags(recyclerView: RecyclerView, viewHolder: ViewHolder): Int = {
@@ -36,4 +39,9 @@ class SwipeCallback(movimentAdapter: MovimentAdapter) extends ItemTouchHelper.Ca
 
   }
 
+  override def onChildDrawOver (c : Canvas, recyclerView : RecyclerView, viewHolder : RecyclerView.ViewHolder, dX : Float, dY : Float, actionState : Int, isCurrentlyActive : Boolean ): Unit ={
+    val view : ListItemViewHolder = viewHolder.asInstanceOf[ListItemViewHolder]
+    viewHolder.itemView.setTranslationX(0)
+    view.mLayout.setTranslationX(dX)
+  }
 }

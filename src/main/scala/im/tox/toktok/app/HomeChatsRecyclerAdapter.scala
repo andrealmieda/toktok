@@ -1,6 +1,8 @@
 package im.tox.toktok.app
 
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.helper.ItemTouchHelper
+import android.util.Log
 import android.view.{ LayoutInflater, View, ViewGroup }
 import im.tox.toktok.R
 

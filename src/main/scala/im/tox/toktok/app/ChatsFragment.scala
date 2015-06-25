@@ -25,7 +25,7 @@ class ChatsFragment extends Fragment {
     mChats_Recycler.setLayoutManager(mLayoutManager)
     var a = ListBuffer[ChatsMessage]()
 
-    for (b <- 1 to 10) {
+    for (b <- 1 to 6) {
       a += new ChatsMessage("Lorem Ipsum", "Hello Tox !!!!!", "Hello, how are you?")
     }
     val mChats_Recycler_Adapter: HomeChatsRecyclerAdapter = new HomeChatsRecyclerAdapter(a)
@@ -39,7 +39,7 @@ class ChatsFragment extends Fragment {
     // Swipe Moviments
 
     val callback: ItemTouchHelper.Callback = new SwipeCallback(mChats_Recycler_Adapter)
-    val touchHelper: ItemTouchHelper = new ItemTouchHelper(callback)
+    val touchHelper: TestMovement = new TestMovement(callback)
     touchHelper.attachToRecyclerView(mChats_Recycler)
 
     return view
