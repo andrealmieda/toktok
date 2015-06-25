@@ -17,10 +17,10 @@ class ChatsFragment extends Fragment {
 
   override def onCreateView(inflater: LayoutInflater, container: ViewGroup, savedState: Bundle): View = {
 
-    // Recycler View
-
     val view: View = inflater.inflate(R.layout.home_chats, container, false)
     val activity: FragmentActivity = getActivity
+
+    // Recycler View
 
     val mChats_Recycler: RecyclerView = view.findViewById(R.id.home_chats_recycler).asInstanceOf[RecyclerView]
     val mLayoutManager: LayoutManager = new LinearLayoutManager(activity)
@@ -32,6 +32,7 @@ class ChatsFragment extends Fragment {
     }
     val mChats_Recycler_Adapter: HomeChatsRecyclerAdapter = new HomeChatsRecyclerAdapter(a)
     mChats_Recycler.setAdapter(mChats_Recycler_Adapter)
+    mChats_Recycler.setLayoutManager(new LinearLayoutManager(activity))
 
     // FAB
 

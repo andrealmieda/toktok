@@ -39,7 +39,7 @@ class SwipeCallback(movimentAdapter: MovimentAdapter) extends ItemTouchHelper.Ca
   }
 
   override def onChildDrawOver(c: Canvas, recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, dX: Float, dY: Float, actionState: Int, isCurrentlyActive: Boolean): Unit = {
-    val view: ListItemViewHolder = viewHolder.asInstanceOf[ListItemViewHolder]
+    val view: HomeChatsRecyclerViewHolder = viewHolder.asInstanceOf[HomeChatsRecyclerViewHolder]
     viewHolder.itemView.setTranslationX(0)
     view.mLayout.setTranslationX(dX)
   }

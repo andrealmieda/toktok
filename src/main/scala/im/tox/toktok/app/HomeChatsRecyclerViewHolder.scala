@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.{ RelativeLayout, TextView }
 import im.tox.toktok.R
 
-final class ListItemViewHolder(itemView: View) extends RecyclerView.ViewHolder(itemView) with View.OnClickListener {
+final class HomeChatsRecyclerViewHolder(itemView: View) extends RecyclerView.ViewHolder(itemView) with View.OnClickListener {
 
   itemView.setOnClickListener(this)
 
@@ -18,10 +18,6 @@ final class ListItemViewHolder(itemView: View) extends RecyclerView.ViewHolder(i
   //var mUnreadCounter : TextView
 
   def onClick(view: View) = {
-    Log.i("TokTok", getPosition() + " Position")
-  }
-
-  def hello(): Unit = {
 
   }
 

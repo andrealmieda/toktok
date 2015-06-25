@@ -8,16 +8,16 @@ import im.tox.toktok.R
 
 import scala.collection.mutable.ListBuffer
 
-class HomeChatsRecyclerAdapter(list: ListBuffer[ChatsMessage]) extends RecyclerView.Adapter[ListItemViewHolder] with MovimentAdapter {
+class HomeChatsRecyclerAdapter(list: ListBuffer[ChatsMessage]) extends RecyclerView.Adapter[HomeChatsRecyclerViewHolder] with MovimentAdapter {
 
   private val items: ListBuffer[ChatsMessage] = list
 
-  def onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListItemViewHolder = {
+  def onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): HomeChatsRecyclerViewHolder = {
     val itemView: View = LayoutInflater.from(viewGroup.getContext).inflate(R.layout.home_chats_item, viewGroup, false)
-    return new ListItemViewHolder(itemView)
+    return new HomeChatsRecyclerViewHolder(itemView)
   }
 
-  def onBindViewHolder(viewHolder: ListItemViewHolder, position: Int) = {
+  def onBindViewHolder(viewHolder: HomeChatsRecyclerViewHolder, position: Int) = {
     val item: ChatsMessage = items(position)
     viewHolder.mUserName.setText(item.getUserName())
     viewHolder.mUserStatus.setText(item.getUserStatus())

@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
   "com.android.support" % "recyclerview-v7" % "22.2.+",
   "it.neokree" % "MaterialTabs" % "0.11",
   "com.melnykov" % "floatingactionbutton" % "1.3.0",
-  "com.github.siyamed" % "android-shape-imageview" % "0.9.+"
+  "com.github.siyamed" % "android-shape-imageview" % "0.9.+",
+  "com.timehop.stickyheadersrecyclerview" % "library" % "0.4.1"
 
   //organization.value %% "tox4j" % version.value
 )

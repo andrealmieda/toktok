@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v4.view.{ ViewPager }
 import android.support.v7.app.{ ActionBarActivity }
 import android.support.v7.widget.{ Toolbar }
-import android.view.{View, Menu}
+import android.view.{ View, Menu }
 import im.tox.toktok.{ R }
 import it.neokree.materialtabs.{ MaterialTabListener, MaterialTabHost, MaterialTab }
 
