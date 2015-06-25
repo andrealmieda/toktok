@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v4.view.{ ViewPager }
 import android.support.v7.app.{ ActionBarActivity }
 import android.support.v7.widget.{ Toolbar }
-import android.view.{ Menu }
+import android.view.{View, Menu}
 import im.tox.toktok.{ R }
 import it.neokree.materialtabs.{ MaterialTabListener, MaterialTabHost, MaterialTab }
 
@@ -38,8 +38,10 @@ class Main extends ActionBarActivity with MaterialTabListener {
         mTabs.setSelectedNavigationItem(position)
         if (position == 0) {
           mMenu.findItem(R.id.action_add_friend).setVisible(true)
+          findViewById(R.id.home_friends_request).setVisibility(View.VISIBLE)
         } else {
           mMenu.findItem(R.id.action_add_friend).setVisible(false)
+          findViewById(R.id.home_friends_request).setVisibility(View.GONE)
         }
       }
     })

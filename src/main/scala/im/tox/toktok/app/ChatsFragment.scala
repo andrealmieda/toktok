@@ -1,10 +1,12 @@
 package im.tox.toktok.app
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.{ Fragment, FragmentActivity }
 import android.support.v7.widget.RecyclerView.LayoutManager
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.support.v7.widget.{ LinearLayoutManager, RecyclerView }
+import android.view.View.OnClickListener
 import android.view.{ LayoutInflater, View, ViewGroup }
 import com.melnykov.fab.FloatingActionButton
 import im.tox.toktok.R
@@ -39,7 +41,7 @@ class ChatsFragment extends Fragment {
     // Swipe Moviments
 
     val callback: ItemTouchHelper.Callback = new SwipeCallback(mChats_Recycler_Adapter)
-    val touchHelper: TestMovement = new TestMovement(callback)
+    val touchHelper: ItemTouchHelper = new ItemTouchHelper(callback)
     touchHelper.attachToRecyclerView(mChats_Recycler)
 
     return view

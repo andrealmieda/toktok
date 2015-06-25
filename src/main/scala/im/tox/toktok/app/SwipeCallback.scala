@@ -1,6 +1,6 @@
 package im.tox.toktok.app
 
-import android.graphics.{Color, Canvas}
+import android.graphics.{ Color, Canvas }
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.RecyclerView.ViewHolder
 import android.support.v7.widget.helper.ItemTouchHelper
@@ -8,7 +8,6 @@ import android.support.v7.widget.helper.ItemTouchHelper.Callback
 import android.util.Log
 import android.widget.RelativeLayout
 import im.tox.toktok.R
-
 
 class SwipeCallback(movimentAdapter: MovimentAdapter) extends ItemTouchHelper.Callback {
 
@@ -39,8 +38,8 @@ class SwipeCallback(movimentAdapter: MovimentAdapter) extends ItemTouchHelper.Ca
 
   }
 
-  override def onChildDrawOver (c : Canvas, recyclerView : RecyclerView, viewHolder : RecyclerView.ViewHolder, dX : Float, dY : Float, actionState : Int, isCurrentlyActive : Boolean ): Unit ={
-    val view : ListItemViewHolder = viewHolder.asInstanceOf[ListItemViewHolder]
+  override def onChildDrawOver(c: Canvas, recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, dX: Float, dY: Float, actionState: Int, isCurrentlyActive: Boolean): Unit = {
+    val view: ListItemViewHolder = viewHolder.asInstanceOf[ListItemViewHolder]
     viewHolder.itemView.setTranslationX(0)
     view.mLayout.setTranslationX(dX)
   }

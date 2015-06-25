@@ -3,4 +3,5 @@
     <item name="HomeColor" type="color">#4A90E2</item>
     <item name="FABColor" type="color">#FAFAFA</item>
     <item name="FABColorPressed" type="color">#ECEBEB</item>
+    <item name="backgroundColor" type="color">#f4f4f4</item>
 </resources>
