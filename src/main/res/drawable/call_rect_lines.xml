@@ -4,13 +4,13 @@
     <item android:id="@android:id/secondaryProgress">
         <scale
             android:drawable="@drawable/call_line"
-            android:scaleWidth="100%" />
+            android:scaleWidth="100%"/>
     </item>
+
     <item android:id="@android:id/progress">
         <scale
             android:drawable="@drawable/call_line"
-            android:scaleWidth="100%" />
-
+            android:scaleWidth="100%"/>
     </item>
 
 </layer-list>
