@@ -22,7 +22,6 @@ class CallOnGoingContactsAdapter(list: ListBuffer[Friend]) extends RecyclerView.
     val item: Friend = items(position)
     viewHolder.mFriendName.setText(item.getUserName())
     viewHolder.mFriendImage.setImageResource(item.getPhotoReference())
-
   }
 
   def getItemCount(): Int = {

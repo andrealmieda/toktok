@@ -19,7 +19,6 @@ class CallMessageAdapter(list: ListBuffer[String]) extends RecyclerView.Adapter[
   def onBindViewHolder(viewHolder: CallMessageViewHolder, position: Int) = {
     val item: String = items(position)
     viewHolder.mMessage.setText(item)
-
   }
 
   def getItemCount(): Int = {
