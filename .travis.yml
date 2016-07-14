@@ -1,0 +1,46 @@
+language: android
+sudo: false
+
+android:
+  components:
+    - android-23
+    - platform-tools
+    - extra-android-support
+    - extra-android-m2repository
+
+cache:
+  directories:
+    - $HOME/cache
+
+install:
+  # Move files from cache directory.
+  - rm -rf $HOME/.m2 $HOME/.ivy2 $HOME/.sbt
+  - mkdir -p $HOME/cache/m2 $HOME/cache/ivy2 $HOME/cache/sbt
+  - ln -s $HOME/cache/m2   $HOME/.m2
+  - ln -s $HOME/cache/ivy2 $HOME/.ivy2
+  - ln -s $HOME/cache/sbt  $HOME/.sbt
+  # Download sbt launcher.
+  - wget http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/sbt-launch.jar
+  # Tidy up joda-convert jar
+  - zip -d $HOME/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.2.jar META-INF/LICENSE.txt || true
+  - zip -d $HOME/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.2.jar META-INF/NOTICE.txt || true
+
+script:
+  # Build APK.
+  - SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+  - java $SBT_OPTS -jar sbt-launch.jar -batch android:package
+  # Upload APK to web repo.
+  - git clone https://$GITHUB_KEY@github.com/tox4j/tox4j.github.io
+  - cp target/android/output/toktok-debug.apk tox4j.github.io/toktok.apk
+  - cd tox4j.github.io
+  - git config push.default simple
+  - git config user.email 'tox4j@travis-ci.org'
+  - git config user.name 'Travis CI Snapshot Uploader'
+  - git add -A .
+  - git commit -a --amend -m "Published Toktok APK on `date -u`"
+  - git push --force -q
+
+before_cache:
+  # Clean up cache.
+  - find $HOME/cache/ivy2 -type f -name "ivydata-*.properties" -delete
+  - find $HOME/cache/sbt/boot -name "sbt.*.lock" -delete
